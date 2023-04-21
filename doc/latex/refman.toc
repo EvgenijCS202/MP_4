@@ -1,0 +1,57 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {russian}{}\relax 
+\contentsline {chapter}{\numberline {1}Алфавитный указатель классов}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Классы}{3}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Список файлов}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Файлы}{5}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Классы}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Класс Gen1}{7}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Конструктор(ы)}{7}{subsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.1.1}Gen1()}{7}{subsubsection.3.1.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Методы}{7}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}gen()}{7}{subsubsection.3.1.2.1}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}genR()}{8}{subsubsection.3.1.2.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.3}genRVector()}{8}{subsubsection.3.1.2.3}%
+\contentsline {subsubsection}{\numberline {3.1.2.4}genVector()}{8}{subsubsection.3.1.2.4}%
+\contentsline {subsubsection}{\numberline {3.1.2.5}setSeed()}{8}{subsubsection.3.1.2.5}%
+\contentsline {section}{\numberline {3.2}Класс Gen2}{8}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Конструктор(ы)}{8}{subsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.1.1}Gen2()}{9}{subsubsection.3.2.1.1}%
+\contentsline {subsection}{\numberline {3.2.2}Методы}{9}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}gen()}{9}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}genR()}{9}{subsubsection.3.2.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.3}genRVector()}{9}{subsubsection.3.2.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.2.4}genVector()}{9}{subsubsection.3.2.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.2.5}setSeed()}{9}{subsubsection.3.2.2.5}%
+\contentsline {chapter}{\numberline {4}Файлы}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Файл files.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{11}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Функции}{11}{subsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}fout()}{11}{subsubsection.4.1.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.2}writeTime()}{12}{subsubsection.4.1.1.2}%
+\contentsline {subsection}{\numberline {4.1.2}Переменные}{12}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}info}{12}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}resultFile}{12}{subsubsection.4.1.2.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.3}sizes}{12}{subsubsection.4.1.2.3}%
+\contentsline {subsubsection}{\numberline {4.1.2.4}sizesNum}{12}{subsubsection.4.1.2.4}%
+\contentsline {section}{\numberline {4.2}files.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{12}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Файл gens.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{13}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Макросы}{13}{subsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.1}ull}{13}{subsubsection.4.3.1.1}%
+\contentsline {subsection}{\numberline {4.3.2}Функции}{13}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}chiSquare()}{13}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}D()}{14}{subsubsection.4.3.2.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.3}M()}{14}{subsubsection.4.3.2.3}%
+\contentsline {subsubsection}{\numberline {4.3.2.4}testChi()}{14}{subsubsection.4.3.2.4}%
+\contentsline {subsubsection}{\numberline {4.3.2.5}varC()}{14}{subsubsection.4.3.2.5}%
+\contentsline {subsubsection}{\numberline {4.3.2.6}writeInfo()}{14}{subsubsection.4.3.2.6}%
+\contentsline {subsection}{\numberline {4.3.3}Переменные}{14}{subsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.3.1}module}{14}{subsubsection.4.3.3.1}%
+\contentsline {section}{\numberline {4.4}gens.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{15}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Файл main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{16}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Функции}{17}{subsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.1.1}main()}{17}{subsubsection.4.5.1.1}%
+\contentsline {subsection}{\numberline {4.5.2}Переменные}{17}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}sampleNumber}{17}{subsubsection.4.5.2.1}%
+\contentsline {subsubsection}{\numberline {4.5.2.2}sampleSize}{17}{subsubsection.4.5.2.2}%
+\contentsline {chapter}{\numberline {5}Ссылка на репозиторий}{19}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Графики}{21}{chapter.6}%

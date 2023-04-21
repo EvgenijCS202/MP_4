@@ -1,0 +1,151 @@
+\hypertarget{gens_8hpp_source}{}\doxysection{gens.\+hpp}
+\mbox{\hyperlink{gens_8hpp}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GENS\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GENS\_HPP}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <deque>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{files_8hpp}{files.hpp}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ ull\ unsigned\ long\ long}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{const}\ \mbox{\hyperlink{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}{ull}}\ \mbox{\hyperlink{gens_8hpp_a656528b6a1f59ff7766f13c9d63f745b}{module}}\ =\ 1\ <<\ 20;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_gen1}{Gen1}}\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}{ull}}\ m;}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}{ull}}\ a\ =\ 1234123421;}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}{ull}}\ c\ =\ 754342159;}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}{ull}}\ k\ =\ 7;}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}{ull}}\ seed\ =\ 0;}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_gen1_ac6b10826f6870e7ee0320de5a9a49808}{Gen1}}(\mbox{\hyperlink{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}{ull}}\ \mbox{\hyperlink{gens_8hpp_a656528b6a1f59ff7766f13c9d63f745b}{module}})\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ m=\mbox{\hyperlink{gens_8hpp_a656528b6a1f59ff7766f13c9d63f745b}{module}};}
+\DoxyCodeLine{00019\ \ \ \ \ \}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gen1_a5bc3924dcb3834b5ba3eca0f381b6cbc}{setSeed}}(\mbox{\hyperlink{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}{ull}}\ seed)\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ this-\/>seed\ =\ seed;}
+\DoxyCodeLine{00022\ \ \ \ \ \}}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}{ull}}\ \mbox{\hyperlink{class_gen1_a4bb1fd485d68c3fc15f860a1e98c5ce8}{gen}}()\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ seed\ =\ (a\string^k\ *\ seed\ +\ (a\string^k\ -\/\ 1)\ /\ (a\ -\/\ 1)\ *\ c)\ \%\ m;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ seed;}
+\DoxyCodeLine{00026\ \ \ \ \ \}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_gen1_ad79ea20e7f3c81715c561f20f3cbe46b}{genR}}()\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\textcolor{keywordtype}{double})\mbox{\hyperlink{class_gen1_a4bb1fd485d68c3fc15f860a1e98c5ce8}{gen}}()\ /\ m;}
+\DoxyCodeLine{00029\ \ \ \ \ \}}
+\DoxyCodeLine{00030\ \ \ \ \ std::vector<ull>\ \mbox{\hyperlink{class_gen1_a03a447aea9c082d32314357801d55804}{genVector}}(\textcolor{keywordtype}{int}\ count)\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ std::vector<ull>\ res(count);}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ count;\ ++i)}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ res[i]\ =\ this-\/>\mbox{\hyperlink{class_gen1_a4bb1fd485d68c3fc15f860a1e98c5ce8}{gen}}();}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{00035\ \ \ \ \ \}}
+\DoxyCodeLine{00036\ \ \ \ \ std::vector<double>\ \mbox{\hyperlink{class_gen1_a1cd845f12df4bbdd186043cc8e8edc58}{genRVector}}(\textcolor{keywordtype}{int}\ count)\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ std::vector<double>\ res(count);}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ count;\ ++i)}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ res[i]\ =\ this-\/>\mbox{\hyperlink{class_gen1_ad79ea20e7f3c81715c561f20f3cbe46b}{genR}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_gen2}{Gen2}}\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{int}\ r;}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{int}\ l;}
+\DoxyCodeLine{00047\ \ \ \ \ std::deque<ull>\ nums;}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}{ull}}\ m;}
+\DoxyCodeLine{00049\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_gen2_ab8e929b19f2e79f4e9f44573e9b06245}{Gen2}}(\mbox{\hyperlink{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}{ull}}\ \mbox{\hyperlink{gens_8hpp_a656528b6a1f59ff7766f13c9d63f745b}{module}})\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ r=55;}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ l=24;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ m=\mbox{\hyperlink{gens_8hpp_a656528b6a1f59ff7766f13c9d63f745b}{module}};}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ nums.clear();}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_gen1}{Gen1}}\ eng(\mbox{\hyperlink{gens_8hpp_a656528b6a1f59ff7766f13c9d63f745b}{module}});}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ std::vector<ull>\ temp\ =\ eng.\mbox{\hyperlink{class_gen1_a03a447aea9c082d32314357801d55804}{genVector}}(r);}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ r;\ ++i)}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ nums.push\_back(temp[i]);}
+\DoxyCodeLine{00059\ \ \ \ \ \}}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gen2_afb10dfc4d603109cae4180b94818de80}{setSeed}}(\mbox{\hyperlink{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}{ull}}\ seed)\ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ nums.clear();}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_gen1}{Gen1}}\ eng(m);}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ eng.\mbox{\hyperlink{class_gen1_a5bc3924dcb3834b5ba3eca0f381b6cbc}{setSeed}}(seed);}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ std::vector<ull>\ temp\ =\ eng.\mbox{\hyperlink{class_gen1_a03a447aea9c082d32314357801d55804}{genVector}}(r);}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ r;\ ++i)}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ nums.push\_back(temp[i]);}
+\DoxyCodeLine{00067\ \ \ \ \ \}}
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}{ull}}\ \mbox{\hyperlink{class_gen2_a6b61408f63a608cc39463eb380e9c1c5}{gen}}()\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}{ull}}\ newNumber\ =\ (nums[r\ -\/\ 1]\ *\ 41\ +\ nums[l\ -\/\ 1]\ *\ 37)\ \%\ m;}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ nums.push\_front(newNumber);}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ nums.pop\_back();}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ newNumber;}
+\DoxyCodeLine{00073\ \ \ \ \ \}}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_gen2_ae81c9fd829b953d75d489198711c431e}{genR}}()\ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\textcolor{keywordtype}{double})\mbox{\hyperlink{class_gen2_a6b61408f63a608cc39463eb380e9c1c5}{gen}}()\ /\ m;}
+\DoxyCodeLine{00076\ \ \ \ \ \}}
+\DoxyCodeLine{00077\ \ \ \ \ std::vector<ull>\ \mbox{\hyperlink{class_gen2_a8a4ef06c8bfb6b256566fcc6925ebb5b}{genVector}}(\textcolor{keywordtype}{int}\ count)\ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ std::vector<ull>\ res(count);}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ count;\ ++i)}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ res[i]\ =\ this-\/>\mbox{\hyperlink{class_gen2_a6b61408f63a608cc39463eb380e9c1c5}{gen}}();}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{00082\ \ \ \ \ \}}
+\DoxyCodeLine{00083\ \ \ \ \ std::vector<double>\ \mbox{\hyperlink{class_gen2_ad2df49a873915420ea6cdb3590611856}{genRVector}}(\textcolor{keywordtype}{int}\ count)\ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ std::vector<double>\ res(count);}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ count;\ ++i)}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ res[i]\ =\ this-\/>\mbox{\hyperlink{class_gen2_ae81c9fd829b953d75d489198711c431e}{genR}}();}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{00088\ \ \ \ \ \}}
+\DoxyCodeLine{00089\ \};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{gens_8hpp_ad1546dd1accdc7f1cb027ec64b051ffb}{M}}(std::vector<double>\&\ v)\ \{}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{double}\ sum\ =\ 0;}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ n\ :\ v)}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ sum\ +=\ n;}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordflow}{return}\ sum\ /\ (double)(v.size());}
+\DoxyCodeLine{00098\ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{gens_8hpp_ad7b5a2598156c49f79f9cf2e07f25ae6}{D}}(\textcolor{keywordtype}{double}\ mean,\ std::vector<double>\&\ v)\ \{}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{double}\ sum\ =\ 0;}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ n\ :\ v)}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ sum\ +=\ (n\ -\/\ mean)\ *\ (n\ -\/\ mean);}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordflow}{return}\ sqrt(sum\ /\ v.size());}
+\DoxyCodeLine{00107\ \}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{gens_8hpp_a6abb9f947f323490cce9d34d30904692}{varC}}(\textcolor{keywordtype}{double}\ deviation,\ \textcolor{keywordtype}{double}\ mean)\ \{}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordflow}{return}\ deviation\ /\ mean;}
+\DoxyCodeLine{00111\ \}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{gens_8hpp_a34e10ba4a6d21fb09437848f68915fa3}{chiSquare}}(std::vector<double>\&\ v)\ \{}
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ n\ =\ v.size();}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ k\ =\ 10;}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ p\ =\ 1\ /\ k;}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \ \ \ \ std::vector<double>\ n\_i(k,\ 0);}
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ el\ :\ v)}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ j\ =\ 0;\ j\ <\ k;\ ++j)}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (p\ *\ j\ <=\ el\ \&\&\ el\ <\ p\ *\ (j\ +\ 1))}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ++n\_i[j];}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{double}\ chi\ =\ 0;}
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ u\ :\ n\_i)}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ chi\ +=\ u*u/p;}
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordflow}{return}\ chi\ /\ n\ -\/\ n;}
+\DoxyCodeLine{00128\ \}}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{gens_8hpp_ac0b3645807d10d54e0329c65f7602fdc}{testChi}}(\textcolor{keywordtype}{double}\ chi)\ \{}
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordflow}{return}\ 5.899\ <=\ chi\ \&\&\ chi\ <=\ 11.39;}
+\DoxyCodeLine{00132\ \}}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{gens_8hpp_a268c27cd95d3f26c874692b4f0ea1103}{writeInfo}}(std::vector<double>\&\ vec)\ \{}
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keywordtype}{double}\ m\ =\ \mbox{\hyperlink{gens_8hpp_ad1546dd1accdc7f1cb027ec64b051ffb}{M}}(vec);}
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{double}\ d\ =\ \mbox{\hyperlink{gens_8hpp_ad7b5a2598156c49f79f9cf2e07f25ae6}{D}}(m,\ vec);}
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keywordtype}{double}\ vc\ =\ \mbox{\hyperlink{gens_8hpp_a6abb9f947f323490cce9d34d30904692}{varC}}(d,\ m);}
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordtype}{double}\ chi\ =\ \mbox{\hyperlink{gens_8hpp_a34e10ba4a6d21fb09437848f68915fa3}{chiSquare}}(vec);}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \ \ \ \ \mbox{\hyperlink{files_8hpp_adc650e6b1f9b807c2127341ddb1a0d8f}{fout}}\ <<\ \textcolor{stringliteral}{"{}Среднее:\ "{}}\ <<\ m\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nОтклонение:\ "{}}\ <<\ d\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nКоэффициент\ вариации:\ "{}}\ <<\ vc}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nКритерий\ хи-\/квадрат:\ "{}}\ <<\ chi\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nИдеальное\ значение\ критерия:\ "{}}}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ <<\ 8.343\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nКритерий\ "{}}\ <<\ (\mbox{\hyperlink{gens_8hpp_ac0b3645807d10d54e0329c65f7602fdc}{testChi}}(chi)\ ?\ \textcolor{stringliteral}{"{}пройден"{}}\ :\ \textcolor{stringliteral}{"{}не\ пройден"{}})\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{00143\ \}}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ GENS\_HPP}}
+
+\end{DoxyCode}

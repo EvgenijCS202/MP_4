@@ -1,0 +1,67 @@
+\hypertarget{files_8hpp}{}\doxysection{Файл files.\+hpp}
+\label{files_8hpp}\index{files.hpp@{files.hpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ofstream \mbox{\hyperlink{files_8hpp_adc650e6b1f9b807c2127341ddb1a0d8f}{fout}} (\mbox{\hyperlink{files_8hpp_a1d866a6475c1ba11c60d23fed929d1cc}{result\+File}})
+\item 
+void \mbox{\hyperlink{files_8hpp_a2b908262e5c960760f6e9bfb1f6a43b5}{write\+Time}} (std\+::string title, std\+::chrono\+::steady\+\_\+clock\+::time\+\_\+point start, std\+::chrono\+::steady\+\_\+clock\+::time\+\_\+point end, int divide\+By=1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{files_8hpp_ac2a6893d7e8bbb68b8648d6d205ce368}{info}} = \char`\"{}info.\+txt\char`\"{}
+\item 
+std\+::string \mbox{\hyperlink{files_8hpp_a1d866a6475c1ba11c60d23fed929d1cc}{result\+File}} = \char`\"{}res.\+txt\char`\"{}
+\item 
+int \mbox{\hyperlink{files_8hpp_a38b66dd0318fe2ac88962b5fbcd7167c}{sizes\+Num}} = 7
+\item 
+int \mbox{\hyperlink{files_8hpp_a83ce21974231212c83bea69978290f5e}{sizes}} \mbox{[}7\mbox{]} = \{ 1000, 5000, 10000, 50000, 100000, 500000, 1000000 \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{files_8hpp_adc650e6b1f9b807c2127341ddb1a0d8f}\label{files_8hpp_adc650e6b1f9b807c2127341ddb1a0d8f}} 
+\index{files.hpp@{files.hpp}!fout@{fout}}
+\index{fout@{fout}!files.hpp@{files.hpp}}
+\doxysubsubsection{\texorpdfstring{fout()}{fout()}}
+{\footnotesize\ttfamily std\+::ofstream fout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{files_8hpp_a1d866a6475c1ba11c60d23fed929d1cc}{result\+File}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{files_8hpp_a2b908262e5c960760f6e9bfb1f6a43b5}\label{files_8hpp_a2b908262e5c960760f6e9bfb1f6a43b5}} 
+\index{files.hpp@{files.hpp}!writeTime@{writeTime}}
+\index{writeTime@{writeTime}!files.hpp@{files.hpp}}
+\doxysubsubsection{\texorpdfstring{writeTime()}{writeTime()}}
+{\footnotesize\ttfamily void write\+Time (\begin{DoxyParamCaption}\item[{std\+::string}]{title,  }\item[{std\+::chrono\+::steady\+\_\+clock\+::time\+\_\+point}]{start,  }\item[{std\+::chrono\+::steady\+\_\+clock\+::time\+\_\+point}]{end,  }\item[{int}]{divide\+By = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Переменные}
+\mbox{\Hypertarget{files_8hpp_ac2a6893d7e8bbb68b8648d6d205ce368}\label{files_8hpp_ac2a6893d7e8bbb68b8648d6d205ce368}} 
+\index{files.hpp@{files.hpp}!info@{info}}
+\index{info@{info}!files.hpp@{files.hpp}}
+\doxysubsubsection{\texorpdfstring{info}{info}}
+{\footnotesize\ttfamily std\+::string info = \char`\"{}info.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{files_8hpp_a1d866a6475c1ba11c60d23fed929d1cc}\label{files_8hpp_a1d866a6475c1ba11c60d23fed929d1cc}} 
+\index{files.hpp@{files.hpp}!resultFile@{resultFile}}
+\index{resultFile@{resultFile}!files.hpp@{files.hpp}}
+\doxysubsubsection{\texorpdfstring{resultFile}{resultFile}}
+{\footnotesize\ttfamily std\+::string result\+File = \char`\"{}res.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{files_8hpp_a83ce21974231212c83bea69978290f5e}\label{files_8hpp_a83ce21974231212c83bea69978290f5e}} 
+\index{files.hpp@{files.hpp}!sizes@{sizes}}
+\index{sizes@{sizes}!files.hpp@{files.hpp}}
+\doxysubsubsection{\texorpdfstring{sizes}{sizes}}
+{\footnotesize\ttfamily int sizes\mbox{[}7\mbox{]} = \{ 1000, 5000, 10000, 50000, 100000, 500000, 1000000 \}}
+
+\mbox{\Hypertarget{files_8hpp_a38b66dd0318fe2ac88962b5fbcd7167c}\label{files_8hpp_a38b66dd0318fe2ac88962b5fbcd7167c}} 
+\index{files.hpp@{files.hpp}!sizesNum@{sizesNum}}
+\index{sizesNum@{sizesNum}!files.hpp@{files.hpp}}
+\doxysubsubsection{\texorpdfstring{sizesNum}{sizesNum}}
+{\footnotesize\ttfamily int sizes\+Num = 7}
+

@@ -1,0 +1,29 @@
+\hypertarget{files_8hpp_source}{}\doxysection{files.\+hpp}
+\mbox{\hyperlink{files_8hpp}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FILES\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FILES\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ std::string\ \mbox{\hyperlink{files_8hpp_ac2a6893d7e8bbb68b8648d6d205ce368}{info}}\ =\ \textcolor{stringliteral}{"{}info.txt"{}};}
+\DoxyCodeLine{00010\ std::string\ \mbox{\hyperlink{files_8hpp_a1d866a6475c1ba11c60d23fed929d1cc}{resultFile}}\ =\ \textcolor{stringliteral}{"{}res.txt"{}};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ std::ofstream\ \mbox{\hyperlink{files_8hpp_adc650e6b1f9b807c2127341ddb1a0d8f}{fout}}(\mbox{\hyperlink{files_8hpp_a1d866a6475c1ba11c60d23fed929d1cc}{resultFile}});}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{files_8hpp_a38b66dd0318fe2ac88962b5fbcd7167c}{sizesNum}}\ =\ 7;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{files_8hpp_a83ce21974231212c83bea69978290f5e}{sizes}}[7]\ =\ \{\ 1000,\ 5000,\ 10000,\ 50000,\ 100000,\ 500000,\ 1000000\ \};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{files_8hpp_a2b908262e5c960760f6e9bfb1f6a43b5}{writeTime}}(std::string\ title,\ std::chrono::steady\_clock::time\_point\ start,\ std::chrono::steady\_clock::time\_point\ end,\ \textcolor{keywordtype}{int}\ divideBy\ =\ 1)\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{files_8hpp_adc650e6b1f9b807c2127341ddb1a0d8f}{fout}}\ <<\ title;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ fout\ <<\ std::chrono::duration\_cast<std::chrono::microseconds>(end\ -\/\ start).count()\ /\ divideBy\ <<\ \textcolor{stringliteral}{"{}\ [микросекунд]\(\backslash\)n"{}};}
+\DoxyCodeLine{00022\ \}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FILES\_H}}
+
+\end{DoxyCode}

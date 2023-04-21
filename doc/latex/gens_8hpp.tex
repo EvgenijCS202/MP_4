@@ -1,0 +1,94 @@
+\hypertarget{gens_8hpp}{}\doxysection{Файл gens.\+hpp}
+\label{gens_8hpp}\index{gens.hpp@{gens.hpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$deque$>$}\newline
+{\ttfamily \#include \char`\"{}files.\+hpp\char`\"{}}\newline
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gen1}{Gen1}}
+\item 
+class \mbox{\hyperlink{class_gen2}{Gen2}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Макросы}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}{ull}}~unsigned long long
+\end{DoxyCompactItemize}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{gens_8hpp_ad1546dd1accdc7f1cb027ec64b051ffb}{M}} (std\+::vector$<$ double $>$ \&v)
+\item 
+double \mbox{\hyperlink{gens_8hpp_ad7b5a2598156c49f79f9cf2e07f25ae6}{D}} (double mean, std\+::vector$<$ double $>$ \&v)
+\item 
+double \mbox{\hyperlink{gens_8hpp_a6abb9f947f323490cce9d34d30904692}{varC}} (double deviation, double mean)
+\item 
+double \mbox{\hyperlink{gens_8hpp_a34e10ba4a6d21fb09437848f68915fa3}{chi\+Square}} (std\+::vector$<$ double $>$ \&v)
+\item 
+bool \mbox{\hyperlink{gens_8hpp_ac0b3645807d10d54e0329c65f7602fdc}{test\+Chi}} (double chi)
+\item 
+void \mbox{\hyperlink{gens_8hpp_a268c27cd95d3f26c874692b4f0ea1103}{write\+Info}} (std\+::vector$<$ double $>$ \&vec)
+\end{DoxyCompactItemize}
+\doxysubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}{ull}} \mbox{\hyperlink{gens_8hpp_a656528b6a1f59ff7766f13c9d63f745b}{module}} = 1 $<$$<$ 20
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Макросы}
+\mbox{\Hypertarget{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}\label{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}} 
+\index{gens.hpp@{gens.hpp}!ull@{ull}}
+\index{ull@{ull}!gens.hpp@{gens.hpp}}
+\doxysubsubsection{\texorpdfstring{ull}{ull}}
+{\footnotesize\ttfamily \#define ull~unsigned long long}
+
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{gens_8hpp_a34e10ba4a6d21fb09437848f68915fa3}\label{gens_8hpp_a34e10ba4a6d21fb09437848f68915fa3}} 
+\index{gens.hpp@{gens.hpp}!chiSquare@{chiSquare}}
+\index{chiSquare@{chiSquare}!gens.hpp@{gens.hpp}}
+\doxysubsubsection{\texorpdfstring{chiSquare()}{chiSquare()}}
+{\footnotesize\ttfamily double chi\+Square (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gens_8hpp_ad7b5a2598156c49f79f9cf2e07f25ae6}\label{gens_8hpp_ad7b5a2598156c49f79f9cf2e07f25ae6}} 
+\index{gens.hpp@{gens.hpp}!D@{D}}
+\index{D@{D}!gens.hpp@{gens.hpp}}
+\doxysubsubsection{\texorpdfstring{D()}{D()}}
+{\footnotesize\ttfamily double D (\begin{DoxyParamCaption}\item[{double}]{mean,  }\item[{std\+::vector$<$ double $>$ \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gens_8hpp_ad1546dd1accdc7f1cb027ec64b051ffb}\label{gens_8hpp_ad1546dd1accdc7f1cb027ec64b051ffb}} 
+\index{gens.hpp@{gens.hpp}!M@{M}}
+\index{M@{M}!gens.hpp@{gens.hpp}}
+\doxysubsubsection{\texorpdfstring{M()}{M()}}
+{\footnotesize\ttfamily double M (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gens_8hpp_ac0b3645807d10d54e0329c65f7602fdc}\label{gens_8hpp_ac0b3645807d10d54e0329c65f7602fdc}} 
+\index{gens.hpp@{gens.hpp}!testChi@{testChi}}
+\index{testChi@{testChi}!gens.hpp@{gens.hpp}}
+\doxysubsubsection{\texorpdfstring{testChi()}{testChi()}}
+{\footnotesize\ttfamily bool test\+Chi (\begin{DoxyParamCaption}\item[{double}]{chi }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gens_8hpp_a6abb9f947f323490cce9d34d30904692}\label{gens_8hpp_a6abb9f947f323490cce9d34d30904692}} 
+\index{gens.hpp@{gens.hpp}!varC@{varC}}
+\index{varC@{varC}!gens.hpp@{gens.hpp}}
+\doxysubsubsection{\texorpdfstring{varC()}{varC()}}
+{\footnotesize\ttfamily double varC (\begin{DoxyParamCaption}\item[{double}]{deviation,  }\item[{double}]{mean }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gens_8hpp_a268c27cd95d3f26c874692b4f0ea1103}\label{gens_8hpp_a268c27cd95d3f26c874692b4f0ea1103}} 
+\index{gens.hpp@{gens.hpp}!writeInfo@{writeInfo}}
+\index{writeInfo@{writeInfo}!gens.hpp@{gens.hpp}}
+\doxysubsubsection{\texorpdfstring{writeInfo()}{writeInfo()}}
+{\footnotesize\ttfamily void write\+Info (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{vec }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Переменные}
+\mbox{\Hypertarget{gens_8hpp_a656528b6a1f59ff7766f13c9d63f745b}\label{gens_8hpp_a656528b6a1f59ff7766f13c9d63f745b}} 
+\index{gens.hpp@{gens.hpp}!module@{module}}
+\index{module@{module}!gens.hpp@{gens.hpp}}
+\doxysubsubsection{\texorpdfstring{module}{module}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{gens_8hpp_a2a1803d02747e2d698a94307ffd6699b}{ull}} module = 1 $<$$<$ 20}
+
